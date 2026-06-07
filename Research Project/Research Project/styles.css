@@ -1,0 +1,479 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+    font-family:sans-serif, Arial;
+    color: #333;
+    background-color: #fff;
+    
+}
+
+/* Navbar */
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003261;
+    padding: 15px;
+    margin-bottom:0;
+   
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    font-size: medium;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight:normal;
+}
+/* Hero Section */
+.e-portals-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fbb927; /* Primary yellow color */
+    color: white; /* Text color */
+    text-transform: uppercase; /* Makes the text all caps */
+    font-weight: normal;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.e-portals-btn:hover {
+    background-color: #a12830; /* Secondary color on hover */
+}
+
+/* Adjust the Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    background-color: rgba(0, 50, 97, 0.8); /* Transparent blue */
+    overflow: hidden;
+    margin-top: -1px;
+    padding:0
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    margin-top: 0;
+}
+
+/* Slideshow images */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; /* Make images slightly transparent for yellow background */
+}
+
+/* Text content over slideshow */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Slideshow fading effect */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+
+.admissions-section {
+    background-color: #f5f7f7;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.admissions-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.admissions-text {
+    margin-bottom: 30px;
+}
+
+.admissions-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.admissions-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.admissions-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.btn1 {
+    display: inline-block;
+    background-color: #0082d1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+.btn2 {
+    display: inline-block;
+    background-color: #fbb927;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+.btn3 {
+    display: inline-block;
+    background-color: #289728;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #003d82;
+}
+
+.cta-container {
+    margin-top: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:first-child {
+    background-color: #a12830;
+    color: #fff;
+}
+
+.cta-button:first-child:hover {
+    background-color: #a12830;
+}
+
+.cta-button.secondary {
+    background-color: #fff;
+    color: #0056b3;
+    border: 2px solid #0056b3;
+}
+
+.cta-button.secondary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/*NEWS SECTION
+
+/* General Section Styling */
+section {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #003261; /* Title color */
+  }
+  
+  /* News Carousel Specific Styles */
+  .news-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .news-slide {
+    min-width: 100%;
+    transition: 0.5s ease;
+  }
+  
+  .news-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 18px;
+    user-select: none;
+    transition: 0.6s ease;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  
+
+
+
+
+
+
+
+
+h2 {
+    font-size: 2em;
+    color: #003261;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* Footer */
+footer {
+    background-color: #003261;
+    color: white;
+    text-align: center;
+    padding:0;
+    margin: 0;
+    position: relative;
+    /*bottom: 0;*/
+    width: 100%;
+}
+footer h2{
+    color:#ffff;
+    font-size:28px;
+}
+
+
+.about-cut {
+    padding: 30px 0;
+    background-color: #ffffff;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-cut h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.about-columns {
+    display: flex;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 14px;
+    line-height: 1.5;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .about-columns {
+        flex-direction: column;
+    }
+    
+    .about-cut h2 {
+        font-size: 1.6em;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #003261;
+    color: white;
+    padding: 40px 0;
+    margin: 0;
+    width: 100%;
+}
+
+footer h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fbb927;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #fbb927;
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #289728;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
+
+
+
