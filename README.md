@@ -9,6 +9,8 @@ HTML
 CSS
 JAVASCRIPT
 Github
+
 DISCLAIMER: Due to the lapsed Voiceflow subscribtion, the chatbot is regretfully not active.
+
 Author
 Yonela Gingqi
